@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    /* Mirrors dashboard/tsconfig.json so shared code moves between them without
+       tripping a strictness difference. The build config (tsconfig.build.json)
+       overrides the emit settings; this one is for editors and `tsc --noEmit`. */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    /* Node-only. `dom` is still in lib for fetch, Response and AbortSignal,
+       which Node implements from the same specs. */
+    "lib": ["dom", "ES2022"],
+    "noEmit": true,
+    /* The interactive console (src/tui) is Ink, which is React reconciled onto
+       a terminal. The automatic runtime keeps `import React` out of every
+       file. */
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "types": ["node"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "eslint.config.js", "vitest.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}

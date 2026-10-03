@@ -1,0 +1,4 @@
+# Build output (`npm run build`). Published from the package, never committed.
+dist/
+*.tsbuildinfo
+node_modules/
