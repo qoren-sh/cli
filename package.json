@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "description": "Drive your Qoren account, environments and agents from the terminal.",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qoren-sh/cli.git"
+  },
   "homepage": "https://qoren.sh/docs/cli",
   "bugs": {
-    "url": "https://qoren.sh/docs/report-a-bug",
+    "url": "https://github.com/qoren-sh/cli/issues",
     "email": "hello@qoren.sh"
   },
   "publishConfig": {
